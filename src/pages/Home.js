@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 import CheeseImage from "../assets/cheese.jpeg";
 import Button from "react-bootstrap/Button";
-// ...
 
 const Home = () => {
   return (
