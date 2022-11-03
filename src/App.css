@@ -1,0 +1,8 @@
+.App {
+  font-family: "HBIOS-SYS";
+}
+
+@font-face {
+  font-family: "HBIOS-SYS";
+  src: url(/src/assets/fonts/HBIOS-SYS.ttf);
+}
