@@ -7,7 +7,7 @@ export const QuestionData = [
     type: "EI",
   },
   {
-    id: 1,
+    id: 2,
     title: "고양이이ㅔ 대한 모든 것이 궁금해졌다. 나의 행동은?",
     answera:
       "고양이 관련 커뮤니티에 들어 다른 집사님들과 소통을 하며 고양이에 대한 지식을 쌓는다.",
