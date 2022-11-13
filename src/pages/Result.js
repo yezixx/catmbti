@@ -27,6 +27,7 @@ const Result = () => {
         <Title>결과 보기</Title>
         <LogoImage>
           <img
+            alt="고양이 사진"
             src={resultData.image}
             className="rounded-circle"
             width={350}
