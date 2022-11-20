@@ -13,7 +13,7 @@ const KakaoShareButton = () => {
     Kakao.init("6c14c5305680180ec982d9a613618af8");
     console.log(Kakao.isInitialized());
   }, []);
-  Kakao.Share.sendDefault({
+  Kakao.Share?.sendDefault({
     objectType: "feed",
     content: {
       title: "예비집사 판별기 결과",
