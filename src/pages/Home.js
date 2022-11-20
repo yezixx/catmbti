@@ -42,6 +42,7 @@ const Wrapper = styled.div`
 
 const Header = styled.div`
   font-size: 40pt;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +59,7 @@ const Content = styled.div`
 const Title = styled.div`
   font-size: 30pt;
   margin-top: 40px;
+  margin-bottom: 20px;
   font-family: "HBIOS-SYS";
 `;
 
@@ -68,5 +70,6 @@ const LogoImage = styled.div`
 const Desc = styled.div`
   font-size: 20pt;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "HBIOS-SYS";
 `;

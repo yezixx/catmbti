@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Button from "react-bootstrap/Button";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { ResultData } from "../assets/data/resultdata";
+import KakaoShareButton from "../component/KakaoShareButton";
 
 const Result = () => {
   const navigate = useNavigate();
@@ -35,12 +36,15 @@ const Result = () => {
           />
         </LogoImage>
         <Desc>예비 집사님과 찰떡궁합인 고양이는 {resultData.name}입니다.</Desc>
-        <Button
-          style={{ fontFamily: "HBIOS-SYS" }}
-          onClick={() => navigate("/")}
-        >
-          테스트 다시하기
-        </Button>
+        <ButtonGroup>
+          <Button
+            style={{ fontFamily: "HBIOS-SYS", width: 170 }}
+            onClick={() => navigate("/")}
+          >
+            테스트 다시하기
+          </Button>
+          <KakaoShareButton />
+        </ButtonGroup>
       </Content>
     </Wrapper>
   );
@@ -55,6 +59,7 @@ const Wrapper = styled.div`
 
 const Header = styled.div`
   font-size: 40pt;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +76,7 @@ const Content = styled.div`
 const Title = styled.div`
   font-size: 30pt;
   margin-top: 40px;
+  margin-bottom: 20px;
   font-family: "HBIOS-SYS";
 `;
 
@@ -81,5 +87,11 @@ const LogoImage = styled.div`
 const Desc = styled.div`
   font-size: 20pt;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "HBIOS-SYS";
+`;
+
+const ButtonGroup = styled.div`
+  display: flex;
+  flex-direction: row;
 `;

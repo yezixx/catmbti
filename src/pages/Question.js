@@ -98,7 +98,12 @@ const Question = () => {
       <ButtonGroup>
         <Button
           onClick={() => handleClickButton(1, QuestionData[questionNo].type)}
-          style={{ width: "40%", minHeight: "200px", fontsize: "15pt" }}
+          style={{
+            width: "40%",
+            minHeight: "200px",
+            fontsize: "15pt",
+            marginTop: "40px",
+          }}
         >
           {QuestionData[questionNo].answera}
         </Button>
@@ -109,6 +114,7 @@ const Question = () => {
             minHeight: "200px",
             fontsize: "15pt",
             marginLeft: "20px",
+            marginTop: "40px",
           }}
         >
           {QuestionData[questionNo].answerb}
@@ -127,6 +133,7 @@ const Wrapper = styled.div`
 
 const Title = styled.div`
   font-size: 30pt;
+  margin-top: 40px;
   text-align: center;
   font-family: "HBIOS-SYS";
 `;
